@@ -9,11 +9,9 @@ export const Container = styled.div`
   ${({ theme, background }) => css`
     display: flex;
     align-items: center;
+    min-height: 100vh;
     background: ${theme.colors.white};
     color: ${theme.colors.primaryColor};
-
     ${background && containerBackgroundActivate(theme)};
-
-    min-height: 100vh;
   `}
 `;
